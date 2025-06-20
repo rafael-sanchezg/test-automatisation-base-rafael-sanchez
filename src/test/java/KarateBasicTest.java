@@ -5,8 +5,33 @@ class KarateBasicTest {
         System.setProperty("karate.ssl", "true");
     }
     @Karate.Test
-    Karate testBasic() {
-        return Karate.run("classpath:karate-test.feature");
+    Karate testAll() {
+        return Karate.run("classpath:karate-test.feature").tags("@REQ_HU-PRUEBA-TECNICA");
+    }
+
+    @Karate.Test
+    Karate testGets() {
+        return Karate.run("classpath:karate-test.feature").tags("@get");
+    }
+
+    @Karate.Test
+    Karate testCreates() {
+        return Karate.run("classpath:karate-test.feature").tags("@post");
+    }
+
+    @Karate.Test
+    Karate testUpdates() {
+        return Karate.run("classpath:karate-test.feature").tags("@put");
+    }
+
+    @Karate.Test
+    Karate testDeletes() {
+        return Karate.run("classpath:karate-test.feature").tags("@delete");
+    }
+
+    @Karate.Test
+    Karate testErrors() {
+        return Karate.run("classpath:karate-test.feature").tags("@error");
     }
 
 }
