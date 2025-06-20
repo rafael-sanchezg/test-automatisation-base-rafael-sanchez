@@ -9,8 +9,8 @@ Este proyecto es una base para implementar pruebas automatizadas de la colecció
 Clona este repositorio en tu máquina local:
 
 ```sh
-git clone https://github.com/dg-juacasti/test-automatisation-base
-cd karate-test
+git clone https://github.com/rafael-sanchezg/test-automatisation-base-rafael-sanchez
+cd test-automatisation-base-rafael-sanchez
 ```
 
 ### 2. Escribe tus pruebas
