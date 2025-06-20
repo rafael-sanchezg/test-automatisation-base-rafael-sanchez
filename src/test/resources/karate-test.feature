@@ -1,7 +1,7 @@
 @REQ_HU-PRUEBA-TECNICA @HU-PRUEBA-TECNICA @gestion_personajes_marvel @marvel_characters_api @Agente2 @E2 @iniciativa_marvel
 Feature: HU-PRUEBA-TECNICA Gestión de personajes Marvel (microservicio para administración de personajes)
   Background:
-    * url port_marvel_characters_api = 'http://bp-se-test-cabcd9b246a5.herokuapp.com/testuser/api/characters'
+    * url port_marvel_characters_api
     * def generarHeaders =
       """
       function() {
